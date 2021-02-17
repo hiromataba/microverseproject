@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ourfirstproject</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <h1 id="title">SURVERY FORM</h1>
+        <p id="description">thank your for taking the time to help us improve our platform</p>
+    <form action="" id="survey-form">
+        <div class="inputcontainer">
+            <label for="name" id="name-label"><span>Name</span>
+                <input type="text"  id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label"><span>Email</span>
+                <input type="email" id="email" placeholder="Enter your email adress" required>
+            </label>
+            <label for="number" id="number-label"><span>Age</span>
+                <input type="number" id="number" min="0" max="14" placeholder="Enter your age" required>
+            </label>
+        </div>
+
+        <select name="" id="dropdown">
+            <option value="">Jascript</option>
+            <option value="">Html</option>
+            <option value="">Css</option>
+            <option value="">React</option>
+        </select>
+
+        
+        
+           <div class="formcontrol">
+            <label for="radi">Css
+            <input type="radio" name="radio" id="" value="css">
+            </label>
+            <label for="radi"><span>Html</span>
+            <input type="radio" name="radio" id="" value="html">
+            </label>
+            <label for="radio"><span>Js</span>
+            <input type="radio" name="radio" id="" value="js">
+            </label>
+        </div> 
+        <div class="checkboxes">
+            <input type="checkbox" name="check" id="" value="front-end">
+            <label for="check">front-end</label>
+            <input type="checkbox" name="check" id="" value="back-end">
+            <label for="check">Back-end</label>
+            <input type="checkbox" name="check" id="" value="Database">
+            <label for="check">Database</label>
+            <input type="checkbox" name="check" id="" value="Networking">
+            <label for="check">Networking</label>
+        </div>
+
+
+        <textarea name="" id="textinput">
+
+        </textarea>
+
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+    </div>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
